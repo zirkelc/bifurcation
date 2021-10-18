@@ -1,0 +1,22 @@
+// https://github.com/microsoft/vscode-eslint/blob/b974cef5a96e21136924cb560db99bd553c61682/README.md
+{
+  "files.exclude": {
+    //"**/node_modules": true
+  },
+  "editor.formatOnSave": false, // Please also note that if you use ESLint as your default formatter you should turn off editor.formatOnSave when you have turned on editor.codeActionsOnSave. Otherwise you file gets fixed twice which in unnecessary.
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.trace.server": "off",
+  "eslint.debug": false,
+  "eslint.lintTask.enable": false,
+  "eslint.format.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.packageManager": "npm",
+}
